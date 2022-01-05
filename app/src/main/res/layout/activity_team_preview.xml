@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Team_Preview">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/team_preview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_back_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="33dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/text_team_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="34dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="bottom"
+            android:text="Team Preview"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/image_back_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="84dp"
+        android:background="@color/cricket_ground_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingClass">
+
+        <ImageView
+            android:id="@+id/image_cricket_ground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="82dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="82dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/text_All_Rounder_palyer1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.523"
+            app:srcCompat="@drawable/cricket_ground" />
+
+        <TextView
+            android:id="@+id/text_wicket_keeper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="160dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Wicket Keeper"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_wk_one"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/team_previous_player1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintHorizontal_bias="0.131"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.052"
+            app:layout_constraintWidth_percent="0.4" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_wk_two"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/team_previous_player2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.052"
+            app:layout_constraintWidth_percent="0.4" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_batsman_one"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/team_player_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintHorizontal_bias="0.022"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.407"
+            app:layout_constraintWidth_percent="0.4" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_batsman_two"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/team_player_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.407"
+            app:layout_constraintWidth_percent="0.4" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_batsman_three"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/team_previous_player4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintHorizontal_bias="0.977"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.407"
+            app:layout_constraintWidth_percent="0.4" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_All_rounder_one"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/team_previous_player5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintHorizontal_bias="0.039"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.65"
+            app:layout_constraintWidth_percent="0.4" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_All_rounder_two"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/team_previous_player2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.651"
+            app:layout_constraintWidth_percent="0.4" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_bowler_one"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/team_player_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.916"
+            app:layout_constraintWidth_percent="0.4" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_bowler_two"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/team_previous_player2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintHorizontal_bias="0.353"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.916"
+            app:layout_constraintWidth_percent="0.4" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_bowler_three"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/team_player_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintHorizontal_bias="0.641"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.916"
+            app:layout_constraintWidth_percent="0.4" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_bowler_four"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/team_previous_player4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintHorizontal_bias="0.92"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.916"
+            app:layout_constraintWidth_percent="0.4" />
+
+        <TextView
+            android:id="@+id/text_All_Rounder"
+            android:layout_width="88dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="All Rounder"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/image_All_rounder_one"
+            app:layout_constraintTop_toBottomOf="@+id/text_batsman_player_2"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text_Bowler"
+            android:layout_width="55dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="177dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Bowler"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_cricket_ground"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text_wk_player_1"
+            android:layout_width="145dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/dark_red_rectangle"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="@string/MohammadRizwan"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_wk_one"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text_wk_player_2"
+            android:layout_width="150dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/dark_red_rectangle"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="@string/SarfarazAhamed"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_wk_two"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/text_batsman_player_1"
+            android:layout_width="80dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/yellow_rectangle"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Bebar azam"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_batsman_one"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text_batsman_player_2"
+            android:layout_width="87dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/yellow_rectangle"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Kieron Pollard"
+            android:textColor="#FFFFFFFF"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/text_batsman_player_3"
+            app:layout_constraintTop_toBottomOf="@+id/image_batsman_two"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text_batsman_player_3"
+            android:layout_width="85dp"
+            android:layout_height="21dp"
+            android:background="@drawable/yellow_rectangle"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Sharjeel khan"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/image_batsman_two"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.49"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text_All_Rounder_palyer1"
+            android:layout_width="90dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/light_green_rectangle"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Jason Holder"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_All_rounder_one"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/text_All_Rounder_palyer2"
+            android:layout_width="90dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/light_green_rectangle"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Shadab khan"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_All_rounder_two"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text_bowler_palyer1"
+            android:layout_width="90dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/dark_yellow_rectangle"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Hasan ali"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_bowler_one"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text_bowler_palyer2"
+            android:layout_width="90dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/dark_yellow_rectangle"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Haris Rauf"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/text_bowler_palyer1"
+            app:layout_constraintTop_toBottomOf="@+id/image_bowler_two"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/text_bowler_palyer3"
+            android:layout_width="90dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/dark_yellow_rectangle"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Akeal Hosein"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/text_bowler_palyer2"
+            app:layout_constraintTop_toBottomOf="@+id/image_bowler_three"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text_bowler_palyer4"
+            android:layout_width="90dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/dark_yellow_rectangle"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Kevin Siniclar"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/text_bowler_palyer3"
+            app:layout_constraintTop_toBottomOf="@+id/image_bowler_four"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text_Bats_man_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="64dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Batsman"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/image_batsman_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

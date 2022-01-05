@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E5E5E5"
+    app:circularflow_defaultRadius="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="12dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cont1"
+            android:layout_width="385dp"
+            android:layout_height="135dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white">
+
+            <Space
+                android:id="@+id/space"
+                android:layout_width="387dp"
+                android:layout_height="33dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/T201"
+                android:layout_width="155dp"
+                android:layout_height="18dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="Ireland vs Russia T20I"
+                android:textColor="#626262"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="7dp"
+                tools:layout_editor_absoluteY="11dp" />
+
+            <ImageView
+                android:id="@+id/Bell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="25dp"
+                app:layout_constraintEnd_toEndOf="@id/cont1"
+                app:layout_constraintLeft_toRightOf="@id/T201"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_notifications_none_24"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/Ireland"
+                android:layout_width="80dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="IRELAND"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/space" />
+
+            <ImageView
+                android:id="@+id/Kol1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="18dp"
+                app:layout_constraintEnd_toStartOf="@+id/Ire"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/kolkatta" />
+
+            <TextView
+                android:id="@+id/Ire"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="IRE"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/Kol1"
+                app:layout_constraintTop_toBottomOf="@+id/Ireland" />
+
+            <TextView
+                android:id="@+id/VS"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="176dp"
+                android:layout_marginTop="67dp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="VS"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/space"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Russia"
+                android:layout_width="80sp"
+                android:layout_height="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="RUSSIA"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/space" />
+
+            <ImageView
+                android:id="@+id/Kol2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/kolkatta" />
+
+            <TextView
+                android:id="@+id/Rsa"
+                android:layout_width="30dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="18dp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="RSA"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toStartOf="@+id/Kol2"
+                app:layout_constraintTop_toBottomOf="@+id/space" />
+
+            <TextView
+                android:id="@+id/Time"
+                android:layout_width="100dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="66dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="143dp"
+                android:background="@drawable/half_radius_red_rectangle"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="20m 03s"
+                android:textColor="@color/white"
+                app:circularflow_defaultRadius="20dp"
+                app:circularflow_radiusInDP="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Kol1"
+                app:layout_constraintTop_toBottomOf="@+id/VS"
+                tools:ignore="TextContrastCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
